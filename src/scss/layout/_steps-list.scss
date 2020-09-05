@@ -1,0 +1,45 @@
+.steps-list {
+  display: flex;
+  margin: 0 -15px;
+
+  @include tab {
+    overflow: scroll;
+    padding: 0 0 30px;
+  }
+
+  &__item {
+    width: calc(100% / 5 - 30px);
+    margin: 0 15px;
+    position: relative;
+
+    @include tab {
+      width: 300px;
+      margin: 0 25px;
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 15px;
+      background-image: url(../images/arrow.png);
+      @include bgContain();
+      right: -30px;
+      top: 70px;
+
+      @include tab {
+        right: -42px;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  &__label {
+    text-align: center;
+    margin: 40px 0 0;
+  }
+}

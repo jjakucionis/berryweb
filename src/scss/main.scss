@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+// abstracts
+@import '/abstracts/mixins';
+@import '/abstracts/variables';
+@import '/abstracts/fonts';
+@import '/abstracts/animations';
+
+// base
+@import '/base/reset';
+@import '/base/typography';
+@import '/base/display';
+
+// components
+@import '/components/buttons';
+@import '/components/video-frame';
+@import '/components/slide-bottom';
+@import '/components/swiper-nav';
+@import '/components/burger';
+@import '/components/logo';
+@import '/components/menu';
+
+// layout
+@import '/layout/grid';
+@import '/layout/sections';
+@import '/layout/contacts-list';
+@import '/layout/footer';
+@import '/layout/technology';
+@import '/layout/steps-list';
+@import '/layout/hero-slider';
+@import '/layout/header';
+
+// pages
+
+// vendors
+@import '/vendors/swiper';

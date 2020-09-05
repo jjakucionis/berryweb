@@ -1,0 +1,13 @@
+.logo {
+  img {
+    width: 50px;
+    height: 64px;
+  }
+
+  &--color {
+    img {
+      width: 49px;
+      height: 64px;
+    }
+  }
+}

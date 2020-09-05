@@ -1,0 +1,42 @@
+div.swiper-button-prev,
+div.swiper-button-next {
+  width: 14px;
+  height: 31px;
+  bottom: 100px;
+  top: auto;
+  @include bgContain();
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+div.swiper-button-prev {
+  left: 30px;
+  background-image: url(../images/arrow-prev.svg);
+  @include sm {
+    left: 10px;
+  }
+}
+
+div.swiper-button-next {
+  right: 30px;
+  background-image: url(../images/arrow-next.svg);
+  @include sm {
+    right: 10px;
+  }
+}
+
+div.swiper-button-prev.dark {
+  background-image: url(../images/arrow-prev-dark.svg);
+}
+
+div.swiper-button-next.dark {
+  background-image: url(../images/arrow-next-dark.svg);
+}

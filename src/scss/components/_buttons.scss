@@ -1,0 +1,39 @@
+.button-centered {
+  text-align: center;
+}
+
+.btn {
+
+  &__main {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: $dark;
+    padding: 15px 20px 15px 60px;
+    border: 2px solid $dark;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: .3s ease-in-out;
+
+    .icon {
+      position: absolute;
+      left: 27px;
+      top: 50%;
+      transform: translateY(-50%);
+      
+      svg {
+        display: block;
+        fill: currentColor;
+        
+      }
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $dark;
+    }
+  }
+}

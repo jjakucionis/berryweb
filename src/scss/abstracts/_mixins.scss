@@ -1,0 +1,90 @@
+// fonts src mixin
+@mixin fontSrc($name) {
+  src: url('../fonts/#{$name}.eot');
+  src: url('../fonts/#{$name}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/#{$name}.woff2') format('woff2'),
+    url('../fonts/#{$name}.woff') format('woff'),
+    url('../fonts/#{$name}.ttf') format('truetype');
+}
+
+// calculation for letter-spacing and line-height in em
+@function em($target, $context: $basepx) {
+  @if $target == 0 {
+    @return 0;
+  }
+
+  @return $target / $context + 0em;
+}
+
+// background cover
+@mixin bgCover() {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin bgContain() {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// link underline
+@mixin linkUnderline() {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media screen and (max-width: #{$sm - 1}) {
+    @content;
+  }
+}
+
+// Tablets devices
+@mixin tab {
+  @media screen and (max-width: #{$tab - 1}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media screen and (max-width: #{$md - 1}) {
+    @content;
+  }
+}
+
+// animation keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

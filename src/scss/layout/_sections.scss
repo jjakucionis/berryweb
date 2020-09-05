@@ -1,0 +1,52 @@
+.section {
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+
+    &--light {
+      color: $white;
+    }
+  }
+
+  &__contacts {
+    padding: 100px 0 40px;
+  }
+
+  &__video {
+    background-color: $dark-blue;
+    padding: 100px 0 113px;
+
+    .small-title {
+      display: block;
+      text-align: center;
+      margin: 0 0 15px;
+    }
+
+    .subtext {
+      max-width: 775px;
+      color: rgba($color: $white, $alpha: 0.5);
+      text-align: center;
+      margin: 15px auto 75px;
+    }
+  }
+
+  &__technology {
+    background-color: $light-background;
+    padding: 100px 0 37px;
+  }
+
+  &__steps {
+    padding: 150px 0 249px;
+
+    @include tab {
+      padding: 75px 0 100px;
+    }
+
+    .subtext {
+      max-width: 775px;
+      color: $slide-text-gray;
+      text-align: center;
+      margin: 15px auto 120px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 -20px;
+  padding: 75px 0 35px;
+
+  &__item {
+    text-align: center;
+    width: calc(100% / 3 - 80px);
+    margin: 0 40px 40px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 5px;
+  }
+
+  &__position {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray;
+    margin: 0 0 15px;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

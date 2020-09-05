@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  &__inner {
+    padding: 20px 0;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .logo {
+      opacity: 1;
+      transition: opacity 0.15s ease-in-out;
+    }
+  }
+
+  &.is-open {
+    .menu {
+      top: 0;
+    }
+
+    .burger__line {
+      background-color: $dark;
+    }
+
+    .header__inner {
+      .logo {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.technology {
+  margin: 50px 0 0;
+  display: flex;
+
+  @include sm {
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .right {
+    width: 50%;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .left {
+    padding: 0 3%;
+    position: relative;
+  }
+
+  .phone-screens {
+    img {
+      position: absolute;
+      width: 42%;
+      left: 29%;
+      top: 11%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+
+      &.is-visible {
+        opacity: 1;
+      }
+    }
+  }
+
+  .right {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__slide {
+    padding-right: 8%;
+    user-select: none;
+  }
+
+  &__slide-title {
+    margin: 0 0 15px;
+  }
+
+  &__slide-text {
+    color: $slide-text-gray;
+  }
+
+  &__pagination.swiper-pagination {
+    margin: 50px 0 0;
+    position: relative;
+    text-align: left;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: $pagination-gray;
+      opacity: 1;
+      transition: background-color 0.15s ease-in-out;
+
+      &:hover {
+        background-color: $pagination-hover;
+      }
+
+      &-active {
+        background-color: $pink;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 8px;
+    z-index: 11;
+  }
+  .swiper-button-next {
+    right: 8%;
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: calc(8% + 40px);
+  }
+}

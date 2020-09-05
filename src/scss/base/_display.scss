@@ -1,0 +1,11 @@
+.no-mob {
+  @media (max-width: $tab - 1px) {
+    display: none !important;
+  }
+}
+
+.only-mob {
+  @media (min-width: $tab) {
+    display: none !important;
+  }
+}

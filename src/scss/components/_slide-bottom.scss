@@ -1,0 +1,40 @@
+.slide-bottom {
+  height: 100%;
+  user-select: none;
+  & > .container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__wrap {
+    border-top: 2px solid $light-background;
+    padding: 50px 25% 50px 8%;
+    position: relative;
+
+    @include tab {
+      padding: 50px 8% 50px 8%;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 15px 0 0;
+    color: $hero-text-gray;
+  }
+
+  &__image {
+    position: absolute;
+    right: 95px;
+    top: -45px;
+    max-height: 270px;
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,14 @@
+.video-frame {
+  iframe {
+    width: 770px;
+    height: 434px;
+    display: block;
+    margin: 0 auto;
+    @include tab {
+      width: 100%;
+    }
+    @include sm {
+      height: 300px;
+    }
+  }
+}
