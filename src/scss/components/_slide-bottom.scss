@@ -1,10 +1,15 @@
 .slide-bottom {
   height: 100%;
   user-select: none;
+
   & > .container {
     display: flex;
     align-items: flex-end;
     height: 100%;
+
+    @include tab {
+      height: auto;
+    }
   }
 
   &__wrap {
@@ -13,7 +18,8 @@
     position: relative;
 
     @include tab {
-      padding: 50px 8% 50px 8%;
+      border: none;
+      padding: 30px 10px 37px 10px;
     }
   }
 
@@ -28,6 +34,11 @@
   &__text {
     margin: 15px 0 0;
     color: $hero-text-gray;
+
+    @include tab {
+      font-size: 15px;
+      font-weight: 400;
+    }
   }
 
   &__image {

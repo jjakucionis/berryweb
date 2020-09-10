@@ -15,21 +15,29 @@ div.swiper-button-next {
   &:hover {
     opacity: 0.5;
   }
+
+  @include tab {
+    position: relative;
+    margin: 0 0 0 auto;
+    display: inline-block;
+    bottom: 0;
+  }
 }
 
 div.swiper-button-prev {
   left: 30px;
   background-image: url(../images/arrow-prev.svg);
-  @include sm {
-    left: 10px;
+  @include tab {
+    left: 0px;
   }
 }
 
 div.swiper-button-next {
   right: 30px;
   background-image: url(../images/arrow-next.svg);
-  @include sm {
-    right: 10px;
+  @include tab {
+    margin: 0 0 0 26px;
+    right: 0;
   }
 }
 

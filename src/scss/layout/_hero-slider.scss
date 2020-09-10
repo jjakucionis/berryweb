@@ -1,12 +1,19 @@
 .hero {
   &__slider.swiper-container {
     padding-bottom: 30px;
+    @include tab {
+      background-color: $dark-blue;
+    }
   }
 
   &__slide.swiper-slide {
     width: 100%;
     height: 100vh;
     min-height: 600px;
+
+    @include md {
+      height: auto;
+    }
   }
 
   &__background {
@@ -16,9 +23,17 @@
     object-position: center;
     object-fit: cover;
     z-index: -1;
+
+    @include md {
+      position: relative;
+      height: auto;
+    }
   }
 
   &__nav-wrap {
     position: relative;
+    @include md {
+      display: flex;
+    }
   }
 }

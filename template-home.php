@@ -6,8 +6,13 @@
       <div class="hero__inner swiper-wrapper">
         <div class="hero__slide swiper-slide">
           <img
-            class="hero__background"
+            class="hero__background no-mob"
             src="./assets/images/hero1.png"
+            alt=""
+          />
+          <img
+            class="hero__background only-mob"
+            src="./assets/images/hero1-mob.png"
             alt=""
           />
           <div class="slide-bottom">
@@ -31,8 +36,13 @@
         </div>
         <div class="hero__slide swiper-slide">
           <img
-            class="hero__background"
+            class="hero__background no-mob"
             src="./assets/images/hero2.png"
+            alt=""
+          />
+          <img
+            class="hero__background only-mob"
+            src="./assets/images/hero2-mob.png"
             alt=""
           />
           <div class="slide-bottom">
@@ -55,8 +65,13 @@
         </div>
         <div class="hero__slide swiper-slide">
           <img
-            class="hero__background"
+            class="hero__background no-mob"
             src="./assets/images/hero3.png"
+            alt=""
+          />
+          <img
+            class="hero__background only-mob"
+            src="./assets/images/hero3-mob.png"
             alt=""
           />
           <div class="slide-bottom">
