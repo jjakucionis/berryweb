@@ -35,5 +35,27 @@
     @include md {
       display: flex;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      @include tab {
+        position: relative;
+        margin: 0 0 0 auto;
+        display: inline-block;
+        bottom: 0;
+      }
+    }
+
+    .swiper-button-prev {
+      @include tab {
+        left: 0px;
+      }
+    }
+    .swiper-button-next {
+      @include tab {
+        margin: 0 0 0 26px;
+        right: 0;
+      }
+    }
   }
 }
