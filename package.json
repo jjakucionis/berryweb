@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "webpack --config ./configs/webpack.config.js --env.mode=prod --mode=production",
-    "start": "webpack-dev-server --config ./configs/webpack.config.js --env.mode=dev --mode=development --watch",
+    "start": "webpack-dev-server --config ./configs/webpack.config.js --env.mode=dev --mode=development --watch --disable-host-check",
     "stageassets": "git add assets"
   },
   "pre-commit": [
